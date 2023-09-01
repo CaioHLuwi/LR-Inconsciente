@@ -34,12 +34,12 @@
 
 #cabecalho .logoArea{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 #cabecalho .logoArea img{
     width: 70%;
+    margin-left: var(--margem-padrao);
 }
 
 .menu{
@@ -75,4 +75,5 @@
 .menu a .loginButton{
     color: #fff;
     text-decoration: none;
+    margin-right: var(--margem-padrao);
 }
