@@ -57,6 +57,7 @@
 .menu .categoriaMenu a{
     text-decoration: none;
     color: var(--cor-fonte-secundaria);
+    transition: ease-in-out 0.5s;
 }
 
 .menu .categoriaMenu a:focus{
