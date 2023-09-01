@@ -4,3 +4,43 @@
     padding: 0;
     text-decoration: none;
 }
+
+:root{
+    --cor-fundo-primaria: #fff;
+    --cor-fonte-primaria: #1B1B1B;
+    --cor-fonte-secundaria: #BB5F28;
+    --cor-fundo-secundaria: #343434;
+    --gradiente-botao-padrao: linear-gradient(91deg, #BD6029 3.86%, #E9A061 98.52%);
+    --margem-padrao: 1.5rem;
+}
+
+#linhaguia1{
+    border: 1px solid green;
+}
+
+#linhaguia2{
+    border: 1px solid red;
+}
+
+#cabecalho{
+    background-color: var(--cor-fundo-primaria);
+    border: #1B1B1B 1px solid;
+    height: 6rem;
+    width: 100%;
+}
+
+#cabecalho .logoArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cabecalho .logoArea img{
+    width: 70%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
