@@ -59,6 +59,13 @@
     color: var(--cor-fonte-secundaria);
 }
 
+.menu .categoriaMenu a:focus{
+    background-color: var(--cor-fundo-secundaria);
+    padding: 10px;
+    border-radius: 19px;
+    color: var(--cor-fonte-focus);
+}
+
 .menu .loginButton{
     background: var(--gradiente-botao-padrao);
     padding: 7px;
