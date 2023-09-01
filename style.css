@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
     --cor-fundo-primaria: #fff;
     --cor-fonte-primaria: #1B1B1B;
-    --cor-fonte-secundaria: #BB5F28;
+    --cor-fonte-secundaria: #cf5c1a;
+    --cor-fonte-focus: #fff;
     --cor-fundo-secundaria: #343434;
     --gradiente-botao-padrao: linear-gradient(91deg, #BD6029 3.86%, #E9A061 98.52%);
     --margem-padrao: 1.5rem;
@@ -24,7 +28,6 @@
 
 #cabecalho{
     background-color: var(--cor-fundo-primaria);
-    border: #1B1B1B 1px solid;
     height: 6rem;
     width: 100%;
 }
@@ -43,4 +46,25 @@
     display: flex;
     align-items: center;
     justify-content: right;
+}
+
+.menu .categoriaMenu{
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.menu .categoriaMenu a{
+    text-decoration: none;
+    color: var(--cor-fonte-secundaria);
+}
+
+.menu .loginButton{
+    background: var(--gradiente-botao-padrao);
+    padding: 7px;
+}
+
+.menu a .loginButton{
+    color: #fff;
+    text-decoration: none;
 }
