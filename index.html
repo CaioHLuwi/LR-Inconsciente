@@ -8,26 +8,63 @@
     <title>LR Inconsciente</title>
 </head>
 <body>
-    <header>
-        <div class="row d-flex justify-content-center" id="cabecalho">
-            <div class="col-lg-2 logoArea">
+    <header id="cabecalho">
+        <div class="row d-flex justify-content-center">
+            <div class="col-2 logoArea">
                 <img src="/images/logo.png" alt="Logo">
             </div>
-            <nav class="col-lg-10 menu">
-                <span class="categoriaMenu px-5">
-                    <a href="#">Inicio</a>
-                </span>
-                <span class="categoriaMenu px-5">
-                    <a href="#">Sobre nós</a>
-                </span>
-                <span class="categoriaMenu px-5">
-                    <a href="#">Agendamento</a>
-                </span>
-                <a href="#" class="text-decoration-none"><span class="categoriaMenu px-5 loginButton">
-                    <span> Entrar </span>
-                </span> </a>
+            <nav class="col-10 menu">
+                <ul>
+                    <li class="categoriaMenu">
+                        <a href="#"> Inicio </a>
+                    </li>
+                    <li class="categoriaMenu">
+                        <a href="#"> Sobre nós </a>
+                    </li>
+                    <li class="categoriaMenu">
+                        <a href="#"> Agendamento </a>
+                    </li>
+                    <li class="loginButton">
+                        <a class="text-decoration-none" href="#"> Entrar </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
+    <main>
+        <section class="container-fluid secaoPrimaria d-flex">
+            <div class="row d-flex justify-content-center">
+                <div class="col-5 d-flex align-items-center" >
+                    <div class="leftside">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button> Botão </button>
+                    </div>
+                </div>
+                <div class="col-5 d-flex align-items-center">
+                    <div class="rightside">
+                        <img  src="/images/homeimage1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid secaoSecundaria d-flex">
+            <div class="row d-flex justify-content-center">
+                <div class="col-5 d-flex align-items-center">
+                    <div class="rightside">
+                        <img  src="/images/homeimage1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-5 d-flex align-items-center" >
+                    <div class="leftside">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button> Botão </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
