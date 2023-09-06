@@ -27,9 +27,12 @@
 }
 
 #cabecalho{
+    top: 0;
+    padding-top: 1em;
     background-color: var(--cor-fundo-primaria);
     height: 6rem;
     width: 100%;
+    position: fixed;
 }
 
 #cabecalho .logoArea{
@@ -48,32 +51,72 @@
     justify-content: right;
 }
 
+.menu ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    position: relative;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    position: relative;
+    margin: 0 30px;
+    text-decoration: none;
+    letter-spacing: 0.2px; 
+    color: var(--cor-fonte-secundaria);
+    transition: ease-in-out 0.5s;
+}
+
 .menu .categoriaMenu{
     font-size: 1.1rem;
     font-style: normal;
     font-weight: 600;
 }
 
-.menu .categoriaMenu a{
-    text-decoration: none;
-    color: var(--cor-fonte-secundaria);
-    transition: ease-in-out 0.5s;
-}
-
-.menu .categoriaMenu a:focus{
+.menu .categoriaMenu.active a{
     background-color: var(--cor-fundo-secundaria);
-    padding: 10px;
+    padding: 6px;
     border-radius: 19px;
     color: var(--cor-fonte-focus);
 }
 
 .menu .loginButton{
+    width: 20%;
+    text-align: center;
     background: var(--gradiente-botao-padrao);
     padding: 7px;
+    border-radius: 5px;
 }
 
-.menu a .loginButton{
+.menu .loginButton a{
     color: #fff;
     text-decoration: none;
     margin-right: var(--margem-padrao);
+    display: flex;
+    justify-content: center;
+}
+
+.secaoPrimaria{
+    margin: var(--margem-padrao);
+    width: 100vw;
+    height: 80vh;
+    border: solid 1px orange;
+}
+
+.secaoSecundaria{
+    margin: var(--margem-padrao);
+    width: 100vw;
+    height: 80vh;
+    background: var(--gradiente-botao-padrao);
+}
+
+.rightside img{
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
 }
