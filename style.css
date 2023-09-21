@@ -18,8 +18,9 @@ h1,h2,h3,h4,h5,h6, section, div {
     --cor-fonte-primaria: #1B1B1B;
     --cor-fonte-secundaria: #cf5c1a;
     --cor-fonte-focus: #fff;
-    --cor-fundo-secundaria: #343434;
-    --gradiente-botao-padrao: linear-gradient(91deg, #BD6029 3.86%, #E9A061 98.52%);
+    --cor-fundo-secundaria: #131313;
+    --gradiente-botao-padrao: linear-gradient(130deg, #BD6029 3.86%, #a04814 98.52%);
+    --gradiente-botao-hover: linear-gradient(130deg, #d45810 3.86%, #8e3501 98.52%);
     --margem-padrao: 1.5rem;
 }
 
@@ -35,18 +36,53 @@ h1,h2,h3,h4,h5,h6, section, div {
     top: 0;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: var(--cor-fundo-primaria);
     width: 100%;
     position: fixed;
+    transition: all 0.6s;
+}
+
+
+#cabecalho.active{
+    background-color: var(--cor-fundo-primaria);
+    transition: all 0.6s;
+}
+
+#cabecalho.active .logoArea img{
+    width: 50%;
+    transition: all 1s;
+} 
+
+#cabecalho.active .logoArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho.active .menu ul li a{
+    color: var(--cor-fonte-secundaria);
+}
+
+#cabecalho.active .menu .loginButton a{
+    color: #fff;
 }
 
 #cabecalho .logoArea{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.logoArea img{
+.secaoInicial {
     width: 100%;
+    height: 90vh;
+    background: url(./images/imagemFundo.jpg) fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+#cabecalho .logoArea img{
+    width: 100%;
+    transition: all 1s;
 }
 
 .menu{
@@ -67,6 +103,8 @@ h1,h2,h3,h4,h5,h6, section, div {
     position: relative;
     list-style-type: none;
     margin: 0 60px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .menu ul li a{
@@ -74,7 +112,7 @@ h1,h2,h3,h4,h5,h6, section, div {
     width: 180px;
     text-decoration: none;
     letter-spacing: 0.2px; 
-    color: var(--cor-fonte-secundaria);
+    color: var(--cor-fonte-primaria);
     transition: ease-in-out 0.5s;
 }
 
@@ -86,7 +124,8 @@ h1,h2,h3,h4,h5,h6, section, div {
 
 .menu .categoriaMenu.active a{
     background-color: var(--cor-fundo-secundaria);
-    padding: 6px;
+    padding: 10px;
+    height: 2rem;
     border-radius: 19px;
     color: var(--cor-fonte-focus);
 }
@@ -114,6 +153,90 @@ h1,h2,h3,h4,h5,h6, section, div {
     border: solid 1px orange;
 }
 
+.secaoPrimaria .leftside h2{
+    font-size: 2rem;
+    color: var(--cor-fonte-secundaria);
+    font-weight: 600;
+}
+
+.secaoPrimaria .leftside p{
+    font-size: 1rem;
+}
+
+.secaoPrimaria .leftside button{
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background: var(--gradiente-botao-padrao);
+    padding: 10px;
+    color: var(--cor-fonte-focus);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    transition: ease-in-out 1s;
+}
+
+
+.cardHome {
+    margin-top: 5rem;
+    margin-left: 4rem;
+    width: 37rem; 
+    background-color: var(--cor-fundo-secundaria);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.cardHome h3{
+    color: var(--cor-fonte-secundaria);
+    font-weight: 500;
+}
+
+.cardHome h1{
+    color: var(--cor-fonte-focus);
+}
+
+.cardHome p{
+    color: var(--cor-fonte-focus);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.cardHome h2{
+    color: var(--cor-fonte-secundaria);
+    margin-top: 2rem;
+}
+
+.cardHome button{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background: var(--gradiente-botao-padrao);
+    padding: 10px;
+    color: var(--cor-fonte-focus);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    transition: ease-in-out 1s;
+}
+
+.cardHome button:hover {
+    background: var(--cor-fundo-primaria);
+    color: var(--cor-fonte-secundaria);
+}
+
+.cardHome a{
+    text-decoration: none;
+}
+
+.cardHome button i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
 .secaoSecundaria{
     margin: var(--margem-padrao);
     width: 100vw;
@@ -121,10 +244,42 @@ h1,h2,h3,h4,h5,h6, section, div {
     background: var(--gradiente-botao-padrao);
 }
 
+.secaoSecundaria .leftside h2{
+    font-size: 2rem;
+    color: var(--cor-fonte-focus);
+    font-weight: 600;
+}
+
+.secaoPrimaria .leftside p{
+    font-size: 1rem;
+}
+
+.secaoSecundaria .leftside button{
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: var(--cor-fonte-primaria);
+    padding: 10px;
+    color: var(--cor-fonte-focus);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    transition: ease-in-out 1s;
+}
+
 .rightside img{
     width: 80%;
     height: auto;
     border-radius: 30px;
+}
+
+.titulo h1{
+    background-color: var(--cor-fonte-secundaria);
+    padding: 10px;
+    color: var(--cor-fonte-focus);
+    border-radius: 1rem;
 }
 
 .cardFeedback {
@@ -183,11 +338,46 @@ h1,h2,h3,h4,h5,h6, section, div {
 footer {
     clear: both;
     height: 300px;
-    background-color: var(--cor-fundo-primaria);
+    background-color: var(--cor-fonte-primaria);
 }
 
 .footer {
     width: 100%;
+}
+
+.footer .secaoFooter h2{
+    font-weight: 600;
+    color: var(--cor-fonte-secundaria);
+}
+
+.footer .secaoFooter span{
+    color: var(--cor-fonte-focus);
+}
+
+.footer .secaoFooter .socialIcon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .secaoFooter .socialIcon span{
+    font-size: 1.05rem;
+}
+
+.footer .secaoFooter .socialIcon a{
+    text-decoration: none;
+}
+
+.footer .secaoFooter .socialIcon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-fonte-focus);
+    background-color: var(--cor-fonte-secundaria);
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
 }
 
 .copyright {
