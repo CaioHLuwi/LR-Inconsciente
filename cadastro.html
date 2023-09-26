@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4ba7363c7c.js" crossorigin="anonymous"></script>
+        <title>LR Inconsciente | Home</title>
+    </head>
+    <body>
+        <header id="cabecalho">
+            <div class="row d-flex justify-content-center">
+                <div class="col-2 logoArea">
+                    <img src="/images/logo.png" alt="Logo">
+                </div>
+                <nav class="col-10 menu">
+                    <ul>
+                        <li class="categoriaMenu">
+                            <a href="./index.html"> Inicio </a>
+                        </li>
+                        <li class="categoriaMenu">
+                            <a href="./sobre.html"> Sobre nós </a>
+                        </li>
+                        <li class="categoriaMenu">
+                            <a href="#"> Agendar consulta </a>
+                        </li>
+                        <li class="loginButton">
+                            <a class="text-decoration-none" href="login.html"> Entrar </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="secaoSignUp">
+                <div class="containerSignUp">
+                    <div class="leftside">
+                        <h2 class="form-title">Cadastro</h2>
+                        <form method="post">
+                            <div class="inputArea">
+                                <label for="nome"><i class="fa-solid fa-user"></i></label>
+                                <input type="text" name="nome" placeholder="Nome completo" required>
+                            </div>
+                            <div class="inputArea">
+                                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="inputArea">
+                                <label for="senha"><i class="fa-solid fa-key"></i></label>
+                                <input type="password" name="senha" placeholder="Senha" required>
+                            </div>
+                            <div class="inputArea">
+                                <label for="dataNascimento"><i class="fa-solid fa-cake-candles"></i></label>
+                                <input type="date" name="dataNascimento" required>
+                            </div>
+                            <div class="inputArea">
+                                <button type="submit">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="rightside">
+                        <div class="signup-image">
+                            <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                            <a href="login.html" class="signupLink">Já sou paciente</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center footer">
+                <div class="col-2 secaoFooter">
+                    <h2> Horário de funcionamento </h2>
+                    <span> Segunda a Sexta: 09:00 - 20:00 </span>
+                </div>
+                <div class="col-3 secaoFooter">
+                    <h2> Endereço </h2>
+                    <span> Rua Dona Margarida Galvão, 291 - Gopouva | Guarulhos - São Paulo • 07051-030 </span>
+                </div>
+                <div class="col-3 secaoFooter">
+                    <h2> Redes sociais </h2>
+                    <div class="row">
+                        <div class="col-4 socialIcon">
+                            <span> Renata Mello </span>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                        <div class="col-4 socialIcon">
+                            <span> Leticia Santos </span>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                        <div class="col-4 socialIcon">
+                            <span> LR Inconsciente </span>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            © 2023. LR Inconsciente Núcleo de Psicologia. Todos os Direitos Reservados
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
